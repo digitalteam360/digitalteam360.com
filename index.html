@@ -1,612 +1,847 @@
 <!doctype html>
-<html lang="en" class="h-full">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Team 360</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <script src="/_sdk/element_sdk.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <style>
-html, body { height: 100%; margin: 0; }
-* { box-sizing: border-box; }
-body { font-family: 'DM Sans', sans-serif; }
-.font-heading { font-family: 'Outfit', sans-serif; }
+<html class="no-js" lang="zxx">
 
-.gradient-text {
-  background: linear-gradient(135deg, #0ea5e9, #6366f1, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Digital Team 360 | 360° Digital Transformation</title>
+    <meta name="author" content="Themeholy">
+    <meta name="description" content="We are creating and promoting a culture of digital transformation by providing easily accessible services, resources and opportunities to help everyone become knowledgeable skilled leaders.">
+    <meta name="keywords" content="Digital Team 360 | 360° Digital Transformation">
+    <meta name="robots" content="INDEX,FOLLOW">
 
-.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.fade-up {
-  opacity: 0; transform: translateY(30px);
-  animation: fadeUp 0.6s ease forwards;
-}
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
-}
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/meta-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/meta-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/meta-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/meta-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/meta-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/meta-logo.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/meta-logo.png">
+    <meta name="theme-color" content="#ffffff">
 
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-.value-card { transition: all 0.3s ease; }
-.value-card:hover { background: #f0f9ff; transform: scale(1.03); }
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-.section-divider {
-  width: 60px; height: 4px; border-radius: 2px;
-  background: linear-gradient(90deg, #0ea5e9, #6366f1);
-}
+</head>
 
-.hero-bg {
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 30%, #ede9fe 60%, #f8fafc 100%);
-}
-</style>
-  <style>body { box-sizing: border-box; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
- </head>
- <body class="h-full">
-  <div id="app" class="w-full h-full overflow-auto bg-white">
-   <!-- Hero / 360° Digital Transformation -->
-   <section class="hero-bg py-20 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-     <div class="fade-up">
-      <p class="text-sm font-semibold tracking-widest uppercase text-sky-600 mb-4">Transforming Lives Digitally</p>
-      <h1 id="heroTitle" class="font-heading text-4xl md:text-6xl font-800 gradient-text mb-12">Digital Team 360</h1>
-     </div>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-      <div class="card-hover fade-up stagger-1 bg-white rounded-2xl p-6 border border-sky-100 text-left">
-       <div class="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center mb-4"><i data-lucide="graduation-cap" class="text-sky-500" style="width:24px;height:24px"></i>
-       </div>
-       <p class="text-xs font-semibold uppercase tracking-wider text-sky-500 mb-1">Experiential Education</p>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Make Your Dream Comes True</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">Empowering Academic Dreams through Quality Education and Financial Assistance</p>
-      </div>
-      <div class="card-hover fade-up stagger-2 bg-white rounded-2xl p-6 border border-indigo-100 text-left">
-       <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-4"><i data-lucide="trending-up" class="text-indigo-500" style="width:24px;height:24px"></i>
-       </div>
-       <p class="text-xs font-semibold uppercase tracking-wider text-indigo-500 mb-1">Professional Upskilling</p>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Make Your Skill Comes True</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">Unlocking Potential through Training and Development to Explore Professional Skills</p>
-      </div>
-      <div class="card-hover fade-up stagger-3 bg-white rounded-2xl p-6 border border-purple-100 text-left">
-       <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center mb-4"><i data-lucide="compass" class="text-purple-500" style="width:24px;height:24px"></i>
-       </div>
-       <p class="text-xs font-semibold uppercase tracking-wider text-purple-500 mb-1">Personalized Mentorship</p>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Make Your Career Comes True</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">Helping the Right and Bright Career Direction with Expert's Mentorship for a Successful Future</p>
-      </div>
-      <div class="card-hover fade-up stagger-4 bg-white rounded-2xl p-6 border border-cyan-100 text-left">
-       <div class="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center mb-4"><i data-lucide="monitor" class="text-cyan-500" style="width:24px;height:24px"></i>
-       </div>
-       <p class="text-xs font-semibold uppercase tracking-wider text-cyan-500 mb-1">Digital Transformation</p>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Make Your Success Comes True</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">Empowering Everyone with Accessible Digital Services, Resources and Opportunities to Achieve Sustainable Success</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Vision and Mission -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="visionTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900">Vision and Mission</h2>
-     </div>
-     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-gradient-to-br from-sky-50 to-indigo-50 rounded-2xl p-8 border border-sky-100">
-       <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm"><i data-lucide="eye" class="text-sky-500" style="width:28px;height:28px"></i>
-       </div>
-       <h3 class="font-heading text-2xl font-700 text-gray-900 mb-3">Vision</h3>
-       <p class="text-gray-600 leading-relaxed text-base">The vision is to create and promote a culture of digital transformation.</p>
-      </div>
-      <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100">
-       <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm"><i data-lucide="target" class="text-purple-500" style="width:28px;height:28px"></i>
-       </div>
-       <h3 class="font-heading text-2xl font-700 text-gray-900 mb-3">Mission</h3>
-       <p class="text-gray-600 leading-relaxed text-base">The mission is to educate everyone in advanced digital technologies.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Story and Journey -->
-   <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="storyTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Story and Journey</h2>
-      <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">Our core motive is providing quality education, science exploration and technology transformation. We are creating and promoting a culture of digital transformation by providing easily accessible services, resources and opportunities to help everyone become knowledgeable skilled leaders. We are a young and passionate team of change makers committed to transforming public communities.</p>
-     </div>
-     <div class="grid md:grid-cols-2 gap-8 mt-10">
-      <div class="card-hover bg-white rounded-2xl p-8 border border-gray-200">
-       <div class="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center mb-4"><i data-lucide="book-open" class="text-sky-500" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading text-xl font-700 text-gray-900 mb-2">Educational Solutions</h3>
-       <p class="text-gray-500 text-sm leading-relaxed">Transforming education and skill through personalized content, powerful mentorship and integrating technology.</p>
-      </div>
-      <div class="card-hover bg-white rounded-2xl p-8 border border-gray-200">
-       <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-4"><i data-lucide="cpu" class="text-indigo-500" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading text-xl font-700 text-gray-900 mb-2">Technological Solutions</h3>
-       <p class="text-gray-500 text-sm leading-relaxed">Transforming career and business through tech with data driven solutions for efficiency, scalability and growth.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Core Ethics and Values -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="ethicsTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900">Core Ethics and Values</h2>
-     </div>
-     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="book" class="text-sky-600" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Learning</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Seeking knowledge to empower and transform lives.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="flame" class="text-red-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Passion</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Acting with enthusiasm to create positive change.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="lightbulb" class="text-amber-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Innovation</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Using creativity and technology for impactful solutions.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="shield" class="text-emerald-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Integrity</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Maintaining honesty and ethical values in all we do.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="crown" class="text-indigo-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Leadership</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Inspiring individuals to lead and create change.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="users" class="text-blue-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Teamwork</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Collaborating to achieve shared success and growth.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-violet-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="award" class="text-violet-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Excellence</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Delivering quality and striving for the best outcomes.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="scan" class="text-teal-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Transparency</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Building trust with clear and open communication.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-pink-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="heart" class="text-pink-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Dedication</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Fully committed to empowering and transforming lives.</p>
-      </div>
-      <div class="value-card rounded-2xl p-5 text-center border border-gray-100 bg-gray-50">
-       <div class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="anchor" class="text-orange-500" style="width:20px;height:20px"></i>
-       </div>
-       <h4 class="font-heading font-600 text-sm text-gray-900 mb-1">Commitment</h4>
-       <p class="text-xs text-gray-500 leading-relaxed">Consistently working toward long-term and big impact.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Who We Are -->
-   <section class="py-20 px-6 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white">
-    <div class="max-w-5xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4" style="background:linear-gradient(90deg,#38bdf8,#818cf8)"></div>
-      <h2 id="whoTitle" class="font-heading text-3xl md:text-5xl font-700 mb-5">Who We Are?</h2>
-      <p class="text-indigo-200 leading-relaxed max-w-3xl mx-auto">We believe in the power of educating, upskilling, mentoring and transforming to change mindset and skillset for the transformation of a skilled mindset.</p>
-     </div>
-     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="card-hover bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10">
-       <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center mb-4"><i data-lucide="graduation-cap" class="text-sky-400" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-600 text-lg mb-2">Educating</h3>
-       <p class="text-sm text-indigo-200 leading-relaxed">Empowering learners with an experiential education like creative design thinking and critical problem solving.</p>
-      </div>
-      <div class="card-hover bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10">
-       <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center mb-4"><i data-lucide="trending-up" class="text-indigo-400" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-600 text-lg mb-2">Upskilling</h3>
-       <p class="text-sm text-indigo-200 leading-relaxed">Unlocking potential with multi-disciplinary knowledge and multi-professional skills to prepare for a dynamic future.</p>
-      </div>
-      <div class="card-hover bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10">
-       <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4"><i data-lucide="compass" class="text-purple-400" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-600 text-lg mb-2">Mentoring</h3>
-       <p class="text-sm text-indigo-200 leading-relaxed">Providing personalized mentoring designed to shape unique strengths and aspirations with social experiments.</p>
-      </div>
-      <div class="card-hover bg-white/5 backdrop-blur rounded-2xl p-6 border border-white/10">
-       <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center mb-4"><i data-lucide="zap" class="text-cyan-400" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-600 text-lg mb-2">Transforming</h3>
-       <p class="text-sm text-indigo-200 leading-relaxed">Fostering the growth of early-stage minds from bootstrapped beginnings through digital transformation.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- What We Do -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="whatTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">What We Do?</h2>
-      <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">We are a young passionate team of problem solvers dedicated to transforming ideas into reality through a commitment to excellence.</p>
-     </div>
-     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="relative card-hover bg-gradient-to-b from-sky-50 to-white rounded-2xl p-6 border border-sky-100 text-center">
-       <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-sky-500 text-white font-heading font-700 text-sm flex items-center justify-center">
-        1
-       </div>
-       <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mx-auto mb-4 mt-3"><i data-lucide="lightbulb" class="text-sky-600" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Ideate</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">We brainstorm innovative ideas to solve unique challenges.</p>
-      </div>
-      <div class="relative card-hover bg-gradient-to-b from-indigo-50 to-white rounded-2xl p-6 border border-indigo-100 text-center">
-       <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-indigo-500 text-white font-heading font-700 text-sm flex items-center justify-center">
-        2
-       </div>
-       <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center mx-auto mb-4 mt-3"><i data-lucide="check-circle" class="text-indigo-600" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Evaluate</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">We assess and refine ideas to ensure accessible opportunities.</p>
-      </div>
-      <div class="relative card-hover bg-gradient-to-b from-purple-50 to-white rounded-2xl p-6 border border-purple-100 text-center">
-       <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-purple-500 text-white font-heading font-700 text-sm flex items-center justify-center">
-        3
-       </div>
-       <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mx-auto mb-4 mt-3"><i data-lucide="search" class="text-purple-600" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Explore</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">We research and develop tech with data driven solutions and outcomes.</p>
-      </div>
-      <div class="relative card-hover bg-gradient-to-b from-cyan-50 to-white rounded-2xl p-6 border border-cyan-100 text-center">
-       <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cyan-500 text-white font-heading font-700 text-sm flex items-center justify-center">
-        4
-       </div>
-       <div class="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center mx-auto mb-4 mt-3"><i data-lucide="maximize" class="text-cyan-600" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Expand</h3>
-       <p class="text-sm text-gray-500 leading-relaxed">We implement strategies to scaleup and achieve sustainable growth.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Our Beneficiaries -->
-   <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="beneficiariesTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900">Our Beneficiaries</h2>
-     </div>
-     <div class="grid md:grid-cols-2 gap-12">
-      <div class="bg-white rounded-2xl p-8 border border-gray-200">
-       <h3 class="font-heading text-2xl font-700 text-gray-900 mb-6">Individuals</h3>
-       <div class="flex flex-wrap gap-3"><span class="px-4 py-2 rounded-full bg-sky-50 text-sky-700 text-sm font-medium border border-sky-200 flex items-center gap-2"><i data-lucide="book-open" style="width:16px;height:16px"></i>Students</span> <span class="px-4 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium border border-indigo-200 flex items-center gap-2"><i data-lucide="user-check" style="width:16px;height:16px"></i>Educators</span> <span class="px-4 py-2 rounded-full bg-purple-50 text-purple-700 text-sm font-medium border border-purple-200 flex items-center gap-2"><i data-lucide="microscope" style="width:16px;height:16px"></i>Research Scholars</span> <span class="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 text-sm font-medium border border-cyan-200 flex items-center gap-2"><i data-lucide="beaker" style="width:16px;height:16px"></i>Scientists</span> <span class="px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium border border-emerald-200 flex items-center gap-2"><i data-lucide="cpu" style="width:16px;height:16px"></i>Technologists</span> <span class="px-4 py-2 rounded-full bg-amber-50 text-amber-700 text-sm font-medium border border-amber-200 flex items-center gap-2"><i data-lucide="briefcase" style="width:16px;height:16px"></i>Professionals</span>
-       </div>
-      </div>
-      <div class="bg-white rounded-2xl p-8 border border-gray-200">
-       <h3 class="font-heading text-2xl font-700 text-gray-900 mb-6">Organizations</h3>
-       <div class="flex flex-wrap gap-3"><span class="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium border border-blue-200 flex items-center gap-2"><i data-lucide="building" style="width:16px;height:16px"></i>Schools</span> <span class="px-4 py-2 rounded-full bg-pink-50 text-pink-700 text-sm font-medium border border-pink-200 flex items-center gap-2"><i data-lucide="building-2" style="width:16px;height:16px"></i>Colleges</span> <span class="px-4 py-2 rounded-full bg-rose-50 text-rose-700 text-sm font-medium border border-rose-200 flex items-center gap-2"><i data-lucide="landmark" style="width:16px;height:16px"></i>Universities</span> <span class="px-4 py-2 rounded-full bg-violet-50 text-violet-700 text-sm font-medium border border-violet-200 flex items-center gap-2"><i data-lucide="lightbulb" style="width:16px;height:16px"></i>Incubators</span> <span class="px-4 py-2 rounded-full bg-fuchsia-50 text-fuchsia-700 text-sm font-medium border border-fuchsia-200 flex items-center gap-2"><i data-lucide="rocket" style="width:16px;height:16px"></i>Accelerators</span> <span class="px-4 py-2 rounded-full bg-sky-50 text-sky-700 text-sm font-medium border border-sky-200 flex items-center gap-2"><i data-lucide="store" style="width:16px;height:16px"></i>MSMEs</span> <span class="px-4 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium border border-indigo-200 flex items-center gap-2"><i data-lucide="zap" style="width:16px;height:16px"></i>Startups</span> <span class="px-4 py-2 rounded-full bg-purple-50 text-purple-700 text-sm font-medium border border-purple-200 flex items-center gap-2"><i data-lucide="briefcase" style="width:16px;height:16px"></i>Corporates</span> <span class="px-4 py-2 rounded-full bg-cyan-50 text-cyan-700 text-sm font-medium border border-cyan-200 flex items-center gap-2"><i data-lucide="heart-handshake" style="width:16px;height:16px"></i>Nonprofits</span> <span class="px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium border border-emerald-200 flex items-center gap-2"><i data-lucide="shield" style="width:16px;height:16px"></i>Governments</span>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section><!-- Our Services -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="servicesTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Our Services</h2>
-      <p id="servicesDesc" class="text-gray-600 leading-relaxed max-w-3xl mx-auto">Unlock the power of education, skill, career and business by exploring our services to achieve sustainable growth.</p>
-     </div>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="card-hover bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-6 border border-sky-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Education, Scholarship and Fellowship</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Access educational opportunities and financial support programs.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Science, Technology, Engineering and Mathematics</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Explore STEM programs designed to build technical excellence.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Courses and Trainings</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Develop new skills with industry-relevant courses and training.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-6 border border-cyan-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Short-Term and Long-Term Programs</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Choose flexible programs tailored to your learning pace.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-6 border border-emerald-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Project and Collaboration</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Work on real-world projects and build collaborative partnerships.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border border-amber-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Startup and Entrepreneurship</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Launch your entrepreneurial journey with expert guidance.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 border border-rose-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Incubation and Acceleration</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Accelerate your business growth with our support programs.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 border border-blue-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Funding and Investment</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Access funding opportunities to scale your initiatives.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl p-6 border border-violet-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Community Building</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Connect with like-minded individuals and build networks.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-fuchsia-50 to-rose-50 rounded-2xl p-6 border border-fuchsia-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Events and Activities</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Engage in inspiring events and learning activities.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 border border-orange-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Awards and Recognitions</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Get recognized for your achievements and contributions.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 border border-red-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Membership and Engagement</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Join our community and unlock exclusive member benefits.</p>
-      </div>
-     </div>
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      <div class="card-hover bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-6 border border-teal-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Internship and Career</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Build your career with internship and placement support.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-6 border border-green-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Products and Services</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Explore innovative products designed for digital transformation.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-lime-50 to-green-50 rounded-2xl p-6 border border-lime-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Research and Innovation</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Contribute to cutting-edge research and innovation projects.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6 border border-yellow-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Training and Development</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Enhance skills with comprehensive training programs.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-sky-50 to-cyan-50 rounded-2xl p-6 border border-sky-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Mentorship and Consultancy</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Get expert guidance through mentorship and consultancy.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 border border-indigo-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Career and Business Guidance</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Navigate your career and business growth path with experts.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 border border-purple-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Partnership and Sponsorship</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Collaborate and sponsor initiatives for mutual growth.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 border border-cyan-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Social Service and Volunteership</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Contribute to society through volunteering opportunities.</p>
-      </div>
-      <div class="card-hover bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-100 flex flex-col">
-       <h3 class="font-heading font-700 text-lg text-gray-900 mb-3">Cultural and Digital Transformation</h3>
-       <p class="text-sm text-gray-600 flex-grow mb-4">Drive cultural and digital change in your organization.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Our Products -->
-   <section class="py-20 px-6 bg-gradient-to-br from-slate-50 to-slate-100">
-    <div class="max-w-5xl mx-auto text-center">
-     <div class="section-divider mx-auto mb-4"></div>
-     <h2 id="productsTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Our Products</h2>
-     <p id="productsDesc" class="text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">Explore our impactful products that showcase tech with data insights to deliver innovative solutions and expected outcomes.</p>
-    </div>
-   </section><!-- Events and Activities -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto text-center">
-     <div class="section-divider mx-auto mb-4"></div>
-     <h2 id="eventsTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Events and Activities</h2>
-     <p class="text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">Bringing people together through engaging events and activities that inspire learning, connection and growth.</p>
-    </div>
-   </section><!-- Community and Membership -->
-   <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto text-center">
-     <div class="section-divider mx-auto mb-4"></div>
-     <h2 id="communityTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Community and Membership</h2>
-     <p class="text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">Empowering everyone with accessible digital services, resources and opportunities to achieve sustainable success.</p>
-    </div>
-   </section><!-- Internship and Career -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto text-center">
-     <div class="section-divider mx-auto mb-4"></div>
-     <h2 id="internshipTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Internship and Career</h2>
-     <p class="text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">We are always looking for passionate individuals to make our team better. We are one team with one goal to support, celebrate and trust each other. We are redefining the traditional work culture.</p>
-    </div>
-   </section><!-- Partnership and Sponsorship -->
-   <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
-     <div class="text-center mb-14">
-      <div class="section-divider mx-auto mb-4"></div>
-      <h2 id="partnershipTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900">Partnership and Sponsorship</h2>
-      <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto mt-4">We have partnerships and collaborations with authorized and recognized institutions, corporates, governments and nonprofits to create and promote a culture of digital transformation.</p>
-     </div>
-     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white rounded-2xl p-8 border border-gray-200">
-       <div class="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center mb-4"><i data-lucide="book-open" class="text-sky-500" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading text-xl font-700 text-gray-900 mb-3">Educational Organizations</h3>
-       <p class="text-gray-600 leading-relaxed">Collaborating with universities, colleges, and schools to enhance educational outcomes and digital literacy.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-8 border border-gray-200">
-       <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-4"><i data-lucide="briefcase" class="text-indigo-500" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading text-xl font-700 text-gray-900 mb-3">Commercial Organizations</h3>
-       <p class="text-gray-600 leading-relaxed">Working with leading companies to bridge the skill gap and create employment opportunities for our learners.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-8 border border-gray-200">
-       <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center mb-4"><i data-lucide="building-2" class="text-purple-500" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading text-xl font-700 text-gray-900 mb-3">Government Organizations</h3>
-       <p class="text-gray-600 leading-relaxed">Partnering with government agencies to support digital transformation initiatives and policy development.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-8 border border-gray-200">
-       <div class="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center mb-4"><i data-lucide="heart-handshake" class="text-cyan-500" style="width:24px;height:24px"></i>
-       </div>
-       <h3 class="font-heading text-xl font-700 text-gray-900 mb-3">Nonprofit Organizations</h3>
-       <p class="text-gray-600 leading-relaxed">Collaborating with NGOs and social enterprises to create inclusive growth and community development programs.</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Contact Us -->
-   <section class="py-20 px-6 bg-white">
-    <div class="max-w-5xl mx-auto text-center">
-     <div class="section-divider mx-auto mb-4"></div>
-     <h2 id="contactTitle" class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Contact Us</h2>
-     <p class="text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">Overcome challenges with solutions, unlock success with powerful mentorship, boost journeys with dedicated support.</p>
-     <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12"><a href="mailto:hello@digitalteam360.com" class="flex items-center gap-4 px-6 py-4 rounded-lg bg-sky-50 border border-sky-200 hover:bg-sky-100 transition"> <i data-lucide="mail" class="text-sky-600" style="width:24px;height:24px"></i> <span class="font-medium text-gray-900">hello@digitalteam360.com</span> </a> <a href="https://wa.me/+919363703377" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 px-6 py-4 rounded-lg bg-green-50 border border-green-200 hover:bg-green-100 transition"> <i data-lucide="message-circle" class="text-green-600" style="width:24px;height:24px"></i> <span class="font-medium text-gray-900">9363703377</span> </a>
-      <div class="flex items-center gap-4 px-6 py-4 rounded-lg bg-purple-50 border border-purple-200"><i data-lucide="map-pin" class="text-purple-600" style="width:24px;height:24px"></i> <span class="font-medium text-gray-900">Chennai, Tamil Nadu</span>
-      </div>
-     </div>
-    </div>
-   </section><!-- Follow Us -->
-   <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-5xl mx-auto text-center">
-     <h2 class="font-heading text-3xl md:text-5xl font-700 text-gray-900 mb-5">Follow Us</h2>
-     <p class="text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">Stay connected with us on social media for the latest updates, insights and community discussions.</p>
-     <div class="flex justify-center gap-6 flex-wrap"><a href="https://www.facebook.com/digitalteam360/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-blue-50 border border-blue-200 hover:bg-blue-100 transition flex items-center justify-center"> <i data-lucide="facebook" class="text-blue-600" style="width:24px;height:24px"></i> </a> <a href="https://www.instagram.com/digitalteam360/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-pink-50 border border-pink-200 hover:bg-pink-100 transition flex items-center justify-center"> <i data-lucide="instagram" class="text-pink-600" style="width:24px;height:24px"></i> </a> <a href="https://www.youtube.com/@digitalteam360/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-red-50 border border-red-200 hover:bg-red-100 transition flex items-center justify-center"> <i data-lucide="youtube" class="text-red-600" style="width:24px;height:24px"></i> </a> <a href="https://www.linkedin.com/company/digitalteam360/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-indigo-50 border border-indigo-200 hover:bg-indigo-100 transition flex items-center justify-center"> <i data-lucide="linkedin" class="text-indigo-600" style="width:24px;height:24px"></i> </a>
-     </div>
-    </div>
-       </section><!-- Footer Links -->
-   <section class="py-12 px-6 bg-white border-t border-gray-200">
-    <div class="max-w-5xl mx-auto">
-     <div class="flex flex-wrap justify-center gap-6 md:gap-8"><a href="https://www.digitalteam360.com/privacy-and-security/" class="text-gray-600 hover:text-gray-900 transition font-medium text-sm">Privacy and Security</a>
-      <div class="w-px bg-gray-200"></div><a href="https://www.digitalteam360.com/terms-and-conditions/" class="text-gray-600 hover:text-gray-900 transition font-medium text-sm">Terms and Conditions</a>
-      <div class="w-px bg-gray-200"></div><a href="https://www.digitalteam360.com/cancellation-and-refund/" class="text-gray-600 hover:text-gray-900 transition font-medium text-sm">Cancellation and Refund</a>
-      <div class="w-px bg-gray-200"></div><a href="https://www.digitalteam360.com/shipping-and-delivery/" class="text-gray-600 hover:text-gray-900 transition font-medium text-sm">Shipping and Delivery</a>
-     </div>
-    </div>
-   </section><!-- Footer -->
-   <footer class="py-8 px-6 bg-slate-900 text-center">
-    <p id="footerText" class="text-slate-400 text-sm">© 2026 All Rights Reserved by Digital Team 360 and Ranjith Krishnan.</p>
-   </footer>
-  </div>
-  <script>
-lucide.createIcons();
+<body>
 
-const defaultConfig = {
-  hero_title: '360° Digital Transformation',
-  vision_title: 'Vision and Mission',
-  story_title: 'Story and Journey',
-  ethics_title: 'Core Ethics and Values',
-  who_title: 'Who We Are?',
-  what_title: 'What We Do?',
-  beneficiaries_title: 'Our Beneficiaries',
-  services_title: 'Our Services',
-  services_desc: 'Unlock the power of education, skill, career and business by exploring our services to achieve sustainable growth.',
-  products_title: 'Our Products',
-  products_desc: 'Explore our impactful products that showcase tech with data insights to deliver innovative solutions and expected outcomes.',
-  events_title: 'Events and Activities',
-  community_title: 'Community and Membership',
-  internship_title: 'Internship and Career',
-  partnership_title: 'Partnership and Sponsorship',
-  contact_title: 'Contact Us',
-  background_color: '#ffffff',
-  surface_color: '#f8fafc',
-  text_color: '#111827',
-  primary_action: '#0ea5e9',
-  secondary_action: '#6366f1',
-  font_family: 'Outfit',
-  font_size: 16
-};
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
-async function onConfigChange(config) {
-  const c = { ...defaultConfig, ...config };
-  document.getElementById('heroTitle').textContent = c.hero_title;
-  document.getElementById('visionTitle').textContent = c.vision_title;
-  document.getElementById('storyTitle').textContent = c.story_title;
-  document.getElementById('ethicsTitle').textContent = c.ethics_title;
-  document.getElementById('whoTitle').textContent = c.who_title;
-  document.getElementById('whatTitle').textContent = c.what_title;
-  document.getElementById('beneficiariesTitle').textContent = c.beneficiaries_title;
-  document.getElementById('servicesTitle').textContent = c.services_title;
-  document.getElementById('servicesDesc').textContent = c.services_desc;
-  document.getElementById('productsTitle').textContent = c.products_title;
-  document.getElementById('productsDesc').textContent = c.products_desc;
-  document.getElementById('eventsTitle').textContent = c.events_title;
-  document.getElementById('communityTitle').textContent = c.community_title;
-  document.getElementById('internshipTitle').textContent = c.internship_title;
-  document.getElementById('partnershipTitle').textContent = c.partnership_title;
-  document.getElementById('contactTitle').textContent = c.contact_title;
-  document.getElementById('footerText').textContent = config.footer_text || '© 2026 All Rights Reserved by Education in India';
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-  document.querySelectorAll('.font-heading').forEach(el => {
-    el.style.fontFamily = `${c.font_family}, Outfit, sans-serif`;
-  });
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
 
-  const base = c.font_size || 16;
-  document.querySelectorAll('h1').forEach(el => el.style.fontSize = `${base * 2.8}px`);
-  document.querySelectorAll('h2').forEach(el => el.style.fontSize = `${base * 2.2}px`);
-  document.querySelectorAll('h3').forEach(el => el.style.fontSize = `${base * 1.2}px`);
-  document.querySelectorAll('p').forEach(el => {
-    if (!el.closest('.value-card')) el.style.fontSize = `${base}px`;
-  });
-}
+    <!--==============================
+     Pre Loader
+    ==============================-->
+    <div id="preloader" class="preloader ">
+        <button class="th-btn th-radius preloaderCls">Loading...</button>
+        <div id="loader" class="th-preloader">
+            <div class="animation-preloader">
+                <div class="txt-loading">
+                    <span preloader-text="D" class="characters">D</span>
 
-if (window.elementSdk) {
-  window.elementSdk.init({
-    defaultConfig,
-    onConfigChange,
-    mapToCapabilities: (config) => ({
-      recolorables: [
-        { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
-        { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
-        { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
-        { get: () => config.primary_action || defaultConfig.primary_action, set: (v) => { config.primary_action = v; window.elementSdk.setConfig({ primary_action: v }); } },
-        { get: () => config.secondary_action || defaultConfig.secondary_action, set: (v) => { config.secondary_action = v; window.elementSdk.setConfig({ secondary_action: v }); } }
-      ],
-      borderables: [],
-      fontEditable: {
-        get: () => config.font_family || defaultConfig.font_family,
-        set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
-      },
-      fontSizeable: {
-        get: () => config.font_size || defaultConfig.font_size,
-        set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
-      }
-    }),
-    mapToEditPanelValues: (config) => new Map([
-      ['hero_title', config.hero_title || defaultConfig.hero_title],
-      ['vision_title', config.vision_title || defaultConfig.vision_title],
-      ['story_title', config.story_title || defaultConfig.story_title],
-      ['ethics_title', config.ethics_title || defaultConfig.ethics_title],
-      ['who_title', config.who_title || defaultConfig.who_title],
-      ['what_title', config.what_title || defaultConfig.what_title],
-      ['beneficiaries_title', config.beneficiaries_title || defaultConfig.beneficiaries_title],
-      ['services_title', config.services_title || defaultConfig.services_title],
-      ['services_desc', config.services_desc || defaultConfig.services_desc],
-      ['products_title', config.products_title || defaultConfig.products_title],
-      ['products_desc', config.products_desc || defaultConfig.products_desc],
-      ['events_title', config.events_title || defaultConfig.events_title],
-      ['community_title', config.community_title || defaultConfig.community_title],
-      ['internship_title', config.internship_title || defaultConfig.internship_title],
-      ['partnership_title', config.partnership_title || defaultConfig.partnership_title],
-      ['contact_title', config.contact_title || defaultConfig.contact_title],
-      ['footer_text', config.footer_text || defaultConfig.footer_text]
-    ])
-  });
-}
-</script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9fd2bc1d14087d39',t:'MTc3OTAyMjA5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+                    <span preloader-text="I" class="characters">I</span>
+
+                    <span preloader-text="G" class="characters">G</span>
+
+                    <span preloader-text="I" class="characters">I</span>
+
+                    <span preloader-text="T" class="characters">T</span>
+
+                    <span preloader-text="A" class="characters">A</span>
+
+                    <span preloader-text="L" class="characters">L</span>
+					
+					<span preloader-text="TEAM" class="characters">TEAM</span>
+					
+					<span preloader-text="360" class="characters">360</span>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!--==============================
+	Header Section
+    ==============================-->
+    <header class="th-header header-layout1">
+		
+            <!-- Main Menu -->
+            <div class="menu-area">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a class="icon-masking" href="index.html"><span data-mask-src="assets/img/logo-black.svg" class="mask-icon"></span><img src="assets/img/logo-black.svg" alt="Education in India"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <div class="header-button">
+                                <button type="button" class="icon-btn searchBoxToggler"><i class="fal fa-search"></i></button>
+                                <button type="button" class="icon-btn sideMenuToggler">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="badge">1</span>
+                                </button>
+                                <a href="membership" class="th-btn style3 shadow-none">Membership<i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-bg"></div>
+            </div>
+        </div>
+    </header>
+	
+    <!--==============================
+    Hero Banner Section
+    ==============================-->
+    <div class="th-hero-wrapper hero-4" id="hero">
+        <div class="body-particle" id="body-particle"></div>
+        <div class="hero-img tilt-active">
+            <img src="assets/img/hero/hero_img_4_1.png" alt="Hero Image">
+        </div>
+        <div class="container">
+            <div class="hero-style4">
+                <div class="ripple-shape">
+                    <span class="ripple-1"></span><span class="ripple-2"></span><span class="ripple-3"></span><span class="ripple-4"></span><span class="ripple-5"></span><span class="ripple-6"></span>
+                </div>
+                <span class="hero-subtitle">360° Digital Transformation</span>
+                <h1 class="hero-title">Digital Team 360</h1>
+                <p class="hero-text">We are creating and promoting a culture of digital transformation by providing easily accessible services, resources and opportunities to help everyone become knowledgeable skilled leaders.</p>
+            </div>
+        </div>
+        <div class="triangle-1"></div>
+        <div class="triangle-2"></div>
+    </div>
+	
+	<!--==============================
+    About Section
+    ==============================-->
+    <div class="overflow-hidden space" id="about-sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 mb-30 mb-xl-0">
+                    <div class="img-box4 tilt-active">
+                        <div class="img-shape icon-masking">
+                            <span class="mask-icon" data-mask-src="assets/img/normal/about_3_1-shape.png"></span>
+                            <img src="assets/img/normal/about_3_1-shape.png" alt="img">
+                        </div>
+                        <img src="assets/img/normal/about_3_1.png" alt="About">
+                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="title-area mb-35 text-center text-xl-start">
+                        <div class="shadow-title">Digital Team 360</div>
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                                <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                            </div>Loading...
+                        </span>
+                        <h2 class="sec-title"> <span class="text-theme">Story</span> and <span class="text-theme">Journey</span></h2>
+                    </div>
+                    <p class="mt-n2 mb-30 text-center text-xl-start">The vision is to create and promote a culture of digital transformation and the mission is to educate everyone in advanced digital technologies. We are a young and passionate team of change makers committed to transforming public communities.</p>
+                    <div class="achivement-tab filter-menu-active indicator-active">
+                        <button data-filter=".cat1" class="active" type="button">Education</button>
+                        <button data-filter=".cat2" type="button">Technology</button>
+                    </div>
+                    <div class="achivement-box-area filter-active-cat1">
+                        <div class="filter-item w-100 cat1">
+                            <div class="achivement-box">
+                                <div class="achivement-box_img">
+                                    <img src="assets/img/normal/about_3_1_1.jpg" alt="About">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Educational Solutions</h3>
+                                    <p class="achivement-box_text">Transforming education and skill through personalized content, powerful mentorship and integrating technology.</p>
+                                    <a href="educational-solutions" class="th-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item w-100 cat2">
+                            <div class="achivement-box">
+                                <div class="achivement-box_img">
+                                    <img src="assets/img/normal/about_3_1_2.jpg" alt="About">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="box-title">Technological Solutions</h3>
+                                    <p class="achivement-box_text">Transforming career and business through tech with data driven solutions for efficiency, scalability and growth.</p>
+                                    <a href="technological-solutions" class="th-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!--==============================
+    Who We Are?  
+    ==============================-->
+    <section class="space" id="process-sec">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                        <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                    </div>
+                    Loading...
+                </span>
+                <h2 class="sec-title">Who We <span class="text-theme">Are?</span></h2>
+            </div>
+            <div class="process-card-area">
+                <div class="process-line position-top">
+                    <img src="assets/img/bg/process_line_2.svg" alt="line">
+                </div>
+                <div class="row gy-40 justify-content-between">
+                    <div class="col-sm-6 col-xl-auto process-card-wrap">
+                        <div class="process-card">
+                            <div class="pulse"></div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_box_1.png" alt="icon">
+                            </div>
+                            <h2 class="box-title">Educating</h2>
+                            <p class="process-card_text">Empowering learners with an experiential education like creative design thinking and critical problem solving.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto process-card-wrap">
+                        <div class="process-card">
+                            <div class="pulse"></div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_box_2.png" alt="icon">
+                            </div>
+                            <h2 class="box-title">Upskilling</h2>
+                            <p class="process-card_text">Unlocking potential with multi-disciplinary knowledge and multi-professional skills to prepare for a dynamic future.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto process-card-wrap">
+                        <div class="process-card">
+                            <div class="pulse"></div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_box_3.png" alt="icon">
+                            </div>
+                            <h2 class="box-title">Mentoring</h2>
+                            <p class="process-card_text">Providing personalized mentoring designed to shape unique strengths and aspirations with social experiments.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto process-card-wrap">
+                        <div class="process-card">
+                            <div class="pulse"></div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_box_4.png" alt="icon">
+                            </div>
+                            <h2 class="box-title">Transforming</h2>
+                            <p class="process-card_text">Fostering the growth of early-stage minds from bootstrapped beginnings through digital transformation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!--==============================
+    What We Do?  
+    ==============================-->
+    <section class="bg-smoke" id="process-sec" data-bg-src="assets/img/bg/process_bg_1.png">
+        <div class="container space">
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                        <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                    </div>
+                    Loading...
+                </span>
+                <h2 class="sec-title">What We <span class="text-theme">Do?</span></h2>
+            </div>
+            <div class="process-card-area">
+                <div class="process-line">
+                    <img src="assets/img/bg/process_line.svg" alt="line">
+                </div>
+                <div class="row gy-40">
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">01</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_1.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Ideate</h2>
+                            <p class="process-card_text">We brainstorm innovative ideas to solve unique challenges.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">02</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_2.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Evaluate</h2>
+                            <p class="process-card_text">We assess and refine ideas to ensure accessible opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">03</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_3.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Explore</h2>
+                            <p class="process-card_text">We research and develop tech with data driven solutions and outcomes.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">04</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_4.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Expand</h2>
+                            <p class="process-card_text">We implement strategies to scaleup and achieve sustainable growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!--==============================
+    List of Items  
+    ==============================-->
+    <section class="space" id="service-sec">
+        <div class="container">
+		<div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                        <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                    </div>
+                    Loading...
+                </span>
+                <h2 class="sec-title">Explore <span class="text-theme">More!</span></h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">01</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S1.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Scholarships and Fellowships</h3>
+                        <p class="service-card_text">Empowering learners through quality education, financial support and fellowship opportunities for academic and professional growth.</p>
+                        <a href="scholarships-and-fellowships.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">02</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S2.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Science, Technology, Engineering and Mathematics (STEM) Lab</h3>
+                        <p class="service-card_text">Advancing STEM knowledge through innovation, practical learning and technology driven solutions for future ready skills.</p>
+						<a href="science-technology-engineering-and-mathematics-STEM-lab.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">03</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S3.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Courses and Programs</h3>
+                        <p class="service-card_text">Providing industry focused courses and hands-on training to build knowledge, skills and career readiness.</p>
+						<a href="courses-and-programs.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">04</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S4.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Project and Collaboration</h3>
+                        <p class="service-card_text">Encouraging collaborative projects and partnerships to solve challenges through creativity, research and innovation.</p>
+						<a href="project-and-collaboration.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">05</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S5.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Training and Development</h3>
+                        <p class="service-card_text">Enhancing personal and professional capabilities through structured learning, skill development and practical experiences.</p>
+						<a href="training-and-development.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">06</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S6.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Research and Innovation</h3>
+                        <p class="service-card_text">Driving impactful research and innovative solutions to address real-world challenges through technology and creativity.</p>
+						<a href="research-and-innovation.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">07</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S7.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Startup and Entrepreneurship</h3>
+                        <p class="service-card_text">Supporting aspiring entrepreneurs with ideas, strategies and resources to build impactful and sustainable startups.</p>
+						<a href="startup-and-entrepreneurship.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">08</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S8.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Incubation and Acceleration</h3>
+                        <p class="service-card_text">Helping startups grow through mentorship, networking, innovation support and business acceleration opportunities.</p>
+						<a href="incubation-and-acceleration.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">09</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S9.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Funding and Investment</h3>
+                        <p class="service-card_text">Connecting innovative ideas with funding, investment and financial opportunities to achieve scalable success.</p>
+						<a href="funding-and-investment.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">10</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S10.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Membership and Community</h3>
+                        <p class="service-card_text">Building an inclusive community with accessible resources, networking and opportunities for shared growth and impact.</p>
+						<a href="membership-and-community.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">11</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S11.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Products and Services</h3>
+                        <p class="service-card_text">Delivering innovative products and digital services designed to solve problems and create meaningful outcomes.</p>
+						<a href="products-and-services.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">12</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S12.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Showcase and Marketplace</h3>
+                        <p class="service-card_text">Creating opportunities to showcase ideas, products and talents through accessible digital and community platforms.</p>
+						<a href="showcase-and-marketplace.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">13</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S13.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Mentorship and Consultancy</h3>
+                        <p class="service-card_text">Providing expert mentorship and strategic consultancy to guide individuals, startups and organizations toward success.</p>
+						<a href="mentorship-and-consultancy.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">14</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S14.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Partnership and Sponsorship</h3>
+                        <p class="service-card_text">Building meaningful partnerships and sponsorships to create collaborative opportunities and long-term impact.</p>
+						<a href="partnership-and-sponsorship.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">15</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S15.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Career and Business Guidance</h3>
+                        <p class="service-card_text">Helping individuals and businesses achieve growth through personalized career advice and business strategies.</p>
+						<a href="career-and-business-guidance.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">16</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S16.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Social Service and Volunteership</h3>
+                        <p class="service-card_text">Encouraging social responsibility through volunteer programs, community service and impactful social initiatives.</p>
+						<a href="social-service-and-volunteership.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">17</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S17.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Cultural and Digital Transformation</h3>
+                        <p class="service-card_text">Promoting cultural growth and digital transformation to empower communities with modern knowledge and opportunities.</p>
+						<a href="cultural-and-digital-transformation.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">18</div>
+                        <div class="shape-icon">
+                            <img src="assets/img/icon/S18.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title">Events and Activities</h3>
+                        <p class="service-card_text">Organizing engaging events and activities that inspire learning, networking, innovation and community engagement.</p>
+						<a href="events-and-activities.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+	
+	<!--==============================
+    Counter Section  
+    ==============================-->
+    <div class="bg-theme space-extra" data-bg-src="assets/img/bg/counter_bg_1.png">
+        <div class="container py-2">
+            <div class="row gy-40 justify-content-between">
+                <div class="col-6 col-lg-auto">
+                    <div class="counter-card">
+                        <div class="counter-card_icon">
+                            <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                        </div>
+                        <div class="media-body">
+                            <h2 class="counter-card_number"><span class="counter-number">100</span>+</h2>
+                            <p class="counter-card_text">Services</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-6 col-lg-auto">
+                    <div class="counter-card">
+                        <div class="counter-card_icon">
+                            <img src="assets/img/icon/counter_1_4.svg" alt="Icon">
+                        </div>
+                        <div class="media-body">
+                            <h2 class="counter-card_number"><span class="counter-number">100</span>+</h2>
+                            <p class="counter-card_text">Projects</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-6 col-lg-auto">
+                    <div class="counter-card">
+                        <div class="counter-card_icon">
+                            <img src="assets/img/icon/counter_1_3.svg" alt="Icon">
+                        </div>
+                        <div class="media-body">
+                            <h2 class="counter-card_number"><span class="counter-number">100</span>+</h2>
+                            <p class="counter-card_text">Products</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-auto">
+                    <div class="counter-card">
+                        <div class="counter-card_icon">
+                            <img src="assets/img/icon/counter_1_2.svg" alt="Icon">
+                        </div>
+                        <div class="media-body">
+                            <h2 class="counter-card_number"><span class="counter-number">100000</span>+</h2>
+                            <p class="counter-card_text">Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!--==============================
+	Footer Section
+    ==============================-->
+    <footer class="footer-wrapper footer-layout1">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xxl-3 col-xl-4">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Digital Team 360</h3>
+                            <div class="th-widget-about">
+                                <p>We are creating and promoting a culture of digital transformation by providing easily accessible services, resources and opportunities to help everyone become knowledgeable skilled leaders.</p>
+                                <div class="th-social">
+									<a href="https://www.facebook.com/digitalteam360/"><i class="fab fa-facebook-f"></i></a>
+							        <a href="https://www.instagram.com/digitalteam360/"><i class="fab fa-instagram"></i></a>
+							        <a href="https://www.youtube.com/@digitalteam360/"><i class="fab fa-youtube"></i></a>
+							        <a href="https://www.linkedin.com/company/digitalteam360/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.twitter.com/digitalteam360/"><i class="fab fa-twitter"></i></a>
+                                </div>   
+						   </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">COLLABORATIONS</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="call-for-application.html">Call for Application (CFA)</a></li>
+                                    <li><a href="expression-of-interest.html">Expression of Interest (EOI)</a></li>
+                                    <li><a href="memorandum-of-understanding.html">Memorandum of Understanding (MOU)</a></li>
+                                    <li><a href="corporate-social-responsibility.html">Corporate Social Responsibility (CSR)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">ORGANIZATIONS</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="educational-organizations.html">Educational</a></li>
+                                    <li><a href="commercial-organizations.html">Commercial</a></li>
+									<li><a href="government-organizations.html">Government</a></li>
+									<li><a href="nonprofit-organizations.html">Nonprofit NGO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Policies</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="privacy-and-security.html">Privacy and Security</a></li>
+                                    <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                                    <li><a href="cancellation-and-refund.html">Cancellation and Refund</a></li>
+                                    <li><a href="shipping-and-delivery.html">Shipping and Delivery</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap bg-title">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <p class="copyright-text"> <i class="fal fa-copyright"></i> 2026 Digital Team 360. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 text-end d-none d-lg-block">
+                        <div class="footer-links">
+                            <ul>
+                                <p>360° Digital Transformation</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-left">
+            <img src="assets/img/shape/footer_shape_2.svg" alt="shape">
+        </div>
+        <div class="shape-right">
+            <div class="particle-1" id="particle-5"></div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
+
+    <!-- gsap -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+
+    <!-- Particles JS -->
+    <script src="assets/js/particles.min.js"></script>
+
+    <script src="assets/js/particles-config.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
